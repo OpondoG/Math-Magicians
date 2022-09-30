@@ -12,12 +12,15 @@ const Calculator =()=>{
   };
   const { total, next } = state;
     return (
-      <div className="calContainer">
+      <div className="calContainer flex-container">
+      <h2 className="cal-title">Let us do some math!</h2>
+      <div className="cal-frame">
         <div className="calculator-grid">
           <div className="output">
             <div className="previous-operand" />
             <div className="current-operand" />
         {next ||total ||0 }
+        </div>
         </div>
           <button onClick={onClickHandler} type="button" className="btn">
             AC
